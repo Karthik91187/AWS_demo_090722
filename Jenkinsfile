@@ -5,12 +5,12 @@ pipeline {
       jdk 'jdk-11-jenkins'
     }
     environment{
-        AWS_ACCOUNT_ID="466243422136"
+        AWS_ACCOUNT_ID="471713514682"
         AWS_DEFAULT_REGION="ap-south-1" 
-        IMAGE_REPO_NAME="demo06072022"
+        IMAGE_REPO_NAME="devops-090722"
         IMAGE_TAG="latest"
-        REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"	
-        EMAIL_TO = 'kalleshdevops@gmail.com'		
+        REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
+        EMAIL_TO = 'karthikrdy@yahoo.com'		
     }
     stages{
         stage('Logging into AWS ECR') {
